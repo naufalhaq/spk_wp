@@ -29,7 +29,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand mr-1" href="index.html">Weightd Product</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -95,7 +95,7 @@
         <li class="nav-item">
           <a class="nav-link" href="index.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span>
+            <span>Home</span>
           </a>
         </li>
         <li class="nav-item dropdown">
@@ -114,16 +114,6 @@
             <a class="dropdown-item active" href="blank.html">Blank Page</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
-        </li>
       </ul>
 
       <div id="content-wrapper">
@@ -133,18 +123,16 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.html">Dashboard</a>
+              <a href="index.html">Home</a>
             </li>
-            <li class="breadcrumb-item active">Blank Page</li>
+            <li class="breadcrumb-item active">Page</li>
           </ol>
 
           <!-- Page Content -->
-          <h1>Blank Page</h1>
-          <hr>
-          <p>This is a great starting point for new custom pages.</p>
 
-        </div>
-        <!-- /.container-fluid -->
+          <!-- Panel-->
+
+          
 
         <!-- Sticky Footer -->
         <footer class="sticky-footer">
@@ -186,14 +174,23 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url()?>assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url()?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="<?php echo base_url()?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="<?php echo base_url()?>assets/vendor/chart.js/Chart.min.js"></script>
+    <script src="<?php echo base_url()?>assets/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="<?php echo base_url()?>assets/vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin.min.js"></script>
+    <script src="<?php echo base_url()?>assets/js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="<?php echo base_url()?>assets/js/demo/datatables-demo.js"></script>
+    <script src="<?php echo base_url()?>assets/js/demo/chart-area-demo.js"></script>
 
   </body>
 
