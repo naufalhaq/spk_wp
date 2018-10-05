@@ -135,7 +135,7 @@
           <div class="col-xl-2 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fas fa-chart-area"></i>
+              <i class="fas fa-image"></i>
               Ini Gambar
           	</div>
             <div class="card-body">
@@ -150,7 +150,7 @@
       	<div class="col-xl-2 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fas fa-chart-area"></i>
+              <i class="fas fa-image"></i>
               Ini Gambar
           	</div>
             <div class="card-body">
@@ -165,7 +165,7 @@
       	<div class="col-xl-2 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fas fa-chart-area"></i>
+              <i class="fas fa-image"></i>
               Ini Gambar
           	</div>
             <div class="card-body">
@@ -180,7 +180,7 @@
       	<div class="col-xl-2 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fas fa-chart-area"></i>
+              <i class="fas fa-image"></i>
               Ini Gambar
           	</div>
             <div class="card-body">
@@ -195,7 +195,7 @@
       	<div class="col-xl-2 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fas fa-chart-area"></i>
+              <i class="fas fa-image"></i>
               Ini Gambar
           	</div>
             <div class="card-body">
@@ -210,7 +210,7 @@
       	<div class="col-xl-2 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fas fa-chart-area"></i>
+              <i class="fas fa-image"></i>
               Ini Gambar
           	</div>
             <div class="card-body">
