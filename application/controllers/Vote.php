@@ -5,7 +5,9 @@ class Vote extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('vote');		
+		$this->load->model('Kriteria_Model');
+		$data['kriteria']=$this->Kriteria_Model->loadKriteria();
+		$this->load->view('vote',$data);		
 	}
 
 }

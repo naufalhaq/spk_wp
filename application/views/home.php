@@ -132,21 +132,7 @@
 
           <!-- Panel Gambar -->
           <div class="row">
-          <div class="col-xl-4 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-image"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             <img src="<?php echo base_url(); ?>assets/image/chelsea.jpg" width="350" >
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
-          </div>
-      	</div>
-
+      <?php for ($i=0; $i <3 ; $i++) { ?>
       	<div class="col-xl-4 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
@@ -154,29 +140,14 @@
               Ini Gambar
           	</div>
             <div class="card-body">
-             <img src="<?php echo base_url(); ?>assets/image/chelsea.jpg" width="350" >
+             <img class="img-thumbnail" src="<?php echo base_url(); ?>assets/image/image1.jpg" >
             </div>
             <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
+			     <a href="<?php echo site_url('vote') ?>" class="btn btn-primary btn-xs">VOTE</a>
             </div>
           </div>
       	</div>
-
-      	<div class="col-xl-4 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-image"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             <img src="<?php echo base_url(); ?>assets/image/chelsea.jpg" width="350" >
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
-          </div>
-      	</div>
-
+      <?php } ?>
       	
       </div>
 

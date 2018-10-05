@@ -131,45 +131,38 @@
           <!-- Page Content -->
 
          <div class="row">
-
-          <div class="col-xl-6 col-sm-6 mb-3">
+          <div class="col-xl-4 col-sm-4 mb-4">
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-image"></i>
               Ini Gambar
             </div>
             <div class="card-body">
-            <img src="<?php echo base_url(); ?>assets/image/chelsea.jpg" width="550" >
+            <img class="img-thumbnail" src="<?php echo base_url(); ?>assets/image/image1.jpg" >
             </div>
           </div>
         </div>
         <!-- Radio Button Content -->
-        <div class="radio">
+        <?php echo form_open('url'); ?>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <?php $a = 1; ?>
+        <?php foreach ($kriteria as $key){?>
+        <div class="radio col-md-12">
+          <label><?php echo $a.". ".$key['pertanyaan'] ?></label>
           <div>
+          <?php for ($i=1; $i<=5 ; $i++) { ?>
           <label>
-            <input type="radio" name="asdas" id="inputAsdas" value="" checked="checked">
-            Baik
+            <input type="radio" name="<?php echo $key[$i] ?>" id="inputAsdas" value="<?php echo $i ?>">
+            <?php echo $key[$i] ?>
           </label>
+        <?php } ?>
           </div>
-
-         <div>
-          <label>
-            <input type="radio" name="asdas" id="inputAsdas" value="" checked="checked">
-            Cukup
-          </label>
-          </div>
-
-          <div>
-          <label>
-            <input type="radio" name="asdas" id="inputAsdas" value="" checked="checked">
-            Kurang
-          </label>
-          </div>
-         <a href="vote" class="btn btn-primary btn-xs">SUBMIT</a>
         </div>
 
+      <?php $a++; } ?>
+      <button type="submit" class="btn btn-large btn-block btn-default">Submit</button>
       </div>
-        
+      <?php echo form_close(); ?>    
         <!-- Sticky Footer -->
         <footer class="sticky-footer">
           <div class="container my-auto">
