@@ -132,14 +132,14 @@
 
          <div class="row">
 
-          <div class="col-xl-2 col-sm-6 mb-3">
+          <div class="col-xl-6 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-image"></i>
               Ini Gambar
             </div>
             <div class="card-body">
-             1
+            <img src="<?php echo base_url(); ?>assets/image/chelsea.jpg" width="550" >
             </div>
           </div>
         </div>

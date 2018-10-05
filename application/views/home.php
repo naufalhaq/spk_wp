@@ -132,14 +132,14 @@
 
           <!-- Panel Gambar -->
           <div class="row">
-          <div class="col-xl-2 col-sm-6 mb-3">
+          <div class="col-xl-4 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-image"></i>
               Ini Gambar
           	</div>
             <div class="card-body">
-             1
+             <img src="<?php echo base_url(); ?>assets/image/chelsea.jpg" width="350" >
             </div>
             <div class="card-footer small text-muted">
 			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
@@ -147,14 +147,14 @@
           </div>
       	</div>
 
-      	<div class="col-xl-2 col-sm-6 mb-3">
+      	<div class="col-xl-4 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-image"></i>
               Ini Gambar
           	</div>
             <div class="card-body">
-             2
+             <img src="<?php echo base_url(); ?>assets/image/chelsea.jpg" width="350" >
             </div>
             <div class="card-footer small text-muted">
 			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
@@ -162,14 +162,14 @@
           </div>
       	</div>
 
-      	<div class="col-xl-2 col-sm-6 mb-3">
+      	<div class="col-xl-4 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-image"></i>
               Ini Gambar
           	</div>
             <div class="card-body">
-             3
+             <img src="<?php echo base_url(); ?>assets/image/chelsea.jpg" width="350" >
             </div>
             <div class="card-footer small text-muted">
 			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
@@ -177,51 +177,7 @@
           </div>
       	</div>
 
-      	<div class="col-xl-2 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-image"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             4
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
-          </div>
-      	</div>
-
-      	<div class="col-xl-2 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-image"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             5
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
-          </div>
-      	</div>
-
-      	<div class="col-xl-2 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-image"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             6
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
-          </div>
-      	</div>
-
+      	
       </div>
 
         <!-- Sticky Footer -->
