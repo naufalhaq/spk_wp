@@ -130,100 +130,46 @@
 
           <!-- Page Content -->
 
-          <!-- Panel Gambar -->
-          <div class="row">
+         <div class="row">
+
           <div class="col-xl-2 col-sm-6 mb-3">
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-chart-area"></i>
               Ini Gambar
-          	</div>
+            </div>
             <div class="card-body">
              1
             </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
           </div>
-      	</div>
+        </div>
+        <!-- Radio Button Content -->
+        <div class="radio">
+          <div>
+          <label>
+            <input type="radio" name="asdas" id="inputAsdas" value="" checked="checked">
+            Baik
+          </label>
+          </div>
 
-      	<div class="col-xl-2 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-chart-area"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             2
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
+         <div>
+          <label>
+            <input type="radio" name="asdas" id="inputAsdas" value="" checked="checked">
+            Cukup
+          </label>
           </div>
-      	</div>
 
-      	<div class="col-xl-2 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-chart-area"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             3
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
+          <div>
+          <label>
+            <input type="radio" name="asdas" id="inputAsdas" value="" checked="checked">
+            Kurang
+          </label>
           </div>
-      	</div>
-
-      	<div class="col-xl-2 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-chart-area"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             4
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
-          </div>
-      	</div>
-
-      	<div class="col-xl-2 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-chart-area"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             5
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
-          </div>
-      	</div>
-
-      	<div class="col-xl-2 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-chart-area"></i>
-              Ini Gambar
-          	</div>
-            <div class="card-body">
-             6
-            </div>
-            <div class="card-footer small text-muted">
-			<a href="vote" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
-          </div>
-      	</div>
+         <a href="vote" class="btn btn-primary btn-xs">SUBMIT</a>
+        </div>
 
       </div>
-
+        
         <!-- Sticky Footer -->
         <footer class="sticky-footer">
           <div class="container my-auto">
