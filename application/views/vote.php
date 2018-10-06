@@ -135,7 +135,7 @@
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-image"></i>
-              Ini Gambar
+              <?php echo $alternatif[0]->nama_alternatif ?>
             </div>
             <div class="card-body">
             <img class="img-thumbnail" src="<?php echo base_url(); ?>assets/image/image1.jpg" >
@@ -143,7 +143,7 @@
           </div>
         </div>
         <!-- Radio Button Content -->
-        <?php echo form_open('url'); ?>
+        <?php echo form_open(site_url('vote/input/').$this->uri->segment(3)); ?>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <?php $a = 1; ?>
         <?php foreach ($kriteria as $key){?>
@@ -152,7 +152,7 @@
           <div>
           <?php for ($i=1; $i<=5 ; $i++) { ?>
           <label>
-            <input type="radio" name="<?php echo $key[$i] ?>" id="inputAsdas" value="<?php echo $i ?>">
+            <input type="radio" name="<?php echo $key['id_kriteria'] ?>" id="inputAsdas" value="<?php echo $i ?>">
             <?php echo $key[$i] ?>
           </label>
         <?php } ?>

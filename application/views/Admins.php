@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
     <meta charset="utf-8">
@@ -127,39 +126,115 @@
             </li>
             <li class="breadcrumb-item active">Page</li>
           </ol>
+        </div>
 
           <!-- Page Content -->
-
-          <!-- Panel Gambar -->
-          <div class="row">
-      <?php foreach ($alternatif as $key) { ?>
-      	<div class="col-xl-4 col-sm-6 mb-3">
-          <div class="card mb-3">
-            <div class="card-header">
-              <?php echo $key->nama_alternatif ?>
-          	</div>
-            <div class="card-body">
-             <img class="img-thumbnail" src="<?php echo base_url(); ?>assets/image/image1.jpg" >
-            </div>
-            <div class="card-footer small text-muted">
-			     <a href="<?php echo site_url('vote/index/').$key->id_alternatif ?>" class="btn btn-primary btn-xs">VOTE</a>
-            </div>
+          <div class="row" style="padding: 10px">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <label>Data Kriteria</label>
+            <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Nama Kriteria</th>
+                  <th>BOBOT</th>
+                  <th>WJ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach ($kriteria as $key){?>
+                <tr>
+                  <td><?php echo $key['nama_kriteria']?></td>
+                  <td><?php echo $key['Bobot']?></td>
+                  <td><?php echo $key['wj']?></td>        
+                </tr>
+                <?php } ?>
+              </tbody>
+            </table>
           </div>
-      	</div>
-      <?php } ?>
-      	
-      </div>
-
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright © Your Website 2018</span>
-            </div>
           </div>
-        </footer>
-
-      </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <label>Data Alternatif</label>
+            <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Nama Kriteria</th>
+                  <th>Vector</th>
+                  <th>Preferensi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach ($alternatif as $key){?>
+                <tr>
+                  <td><?php echo $key->nama_alternatif?></td>
+                  <td><?php echo $key->nilai_vector?></td>  
+                  <td><?php echo $key->nilai_preferensi?></td>      
+                </tr>
+                <?php } ?>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <LABEL>DATA VOTER</LABEL>
+            <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Nama Alternatif</th>
+                  <th>KRITERIA</th>
+                  <th>TOTAL</th>
+                  <th>RATA-RATA</th>
+                  <th>VOTER</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach ($vote as $key){?>
+                <tr>
+                  <td><?php echo $key->nama_alternatif?></td>
+                  <td><?php echo $key->id_kriteria?></td>
+                  <td><?php echo $key->total?></td>
+                  <td><?php echo $key->rata2?></td>
+                  <td><?php echo $key->voter?></td>
+                </tr>
+                <?php } ?>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <label>Alternatif Normalisasi</label>
+            <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Nama Alternatif</th>
+                  <th>C1</th>
+                  <th>C2</th>
+                  <th>C3</th>
+                  <th>C4</th>
+                  <th>C5</th>
+                  <th>C6</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach ($vote_normalisasi as $key){?>
+                <tr>
+                  <td><?php echo $key->nama_alternatif?></td>
+                  <td><?php echo $key->C1?></td>
+                  <td><?php echo $key->C2?></td>
+                  <td><?php echo $key->C3?></td>
+                  <td><?php echo $key->C4?></td>
+                  <td><?php echo $key->C5?></td>
+                  <td><?php echo $key->C6?></td>
+                </tr>
+                <?php } ?>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          </div>
       <!-- /.content-wrapper -->
 
     </div>
