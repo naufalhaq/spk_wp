@@ -23,12 +23,14 @@ DROP TABLE IF EXISTS `alternatif`;
 CREATE TABLE `alternatif` (
   `id_alternatif` int(11) NOT NULL AUTO_INCREMENT,
   `nama_alternatif` varchar(200) DEFAULT NULL,
-  `nilai_vector` float DEFAULT NULL,
-  `nilai_preferensi` float DEFAULT NULL,
+  `nilai_vector` float DEFAULT '0',
+  `nilai_preferensi` float DEFAULT '0',
   PRIMARY KEY (`id_alternatif`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 /*Data for the table `alternatif` */
+
+insert  into `alternatif`(`id_alternatif`,`nama_alternatif`,`nilai_vector`,`nilai_preferensi`) values (1,'Tiga Warna',3.43393,0.295477),(2,'Bajul Mati',3.7499,0.322665),(3,'Teluk Asmara',4.43782,0.381858);
 
 /*Table structure for table `kriteria` */
 
@@ -46,23 +48,24 @@ CREATE TABLE `kriteria` (
   `5` varchar(200) DEFAULT NULL,
   `wj` float DEFAULT NULL,
   PRIMARY KEY (`id_kriteria`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 /*Data for the table `kriteria` */
 
-insert  into `kriteria`(`id_kriteria`,`nama_kriteria`,`pertanyaan`,`Bobot`,`1`,`2`,`3`,`4`,`5`,`wj`) values (1,'Keindahan','Seberapa Indah Tempat Ini',4,'Sangat Kurang','Kurang','Cukup','Indah','Sangat Indah',0.154),(2,'Jarak','Seberapa Jauh Lokasi Ini ?',4,'Sangat Jaug','Jauh','Cukup','Dekat','Sangat Dekat',0.154),(3,'Akses','Seberapa Mudah Akses jalan Menuju Lokasi',3,'Sangat Sulit','Sulit','Biasa','Mudah','Sangat Mudah',0.192);
+insert  into `kriteria`(`id_kriteria`,`nama_kriteria`,`pertanyaan`,`Bobot`,`1`,`2`,`3`,`4`,`5`,`wj`) values (1,'Keindahan','Seberapa Indah Tempat Ini',4,'Sangat Kurang','Kurang','Cukup','Indah','Sangat Indah',0.154),(2,'Jarak','Seberapa Jauh Lokasi Ini ?',4,'Sangat Jaug','Jauh','Cukup','Dekat','Sangat Dekat',0.154),(3,'Akses','Seberapa Mudah Akses jalan Menuju Lokasi',5,'Sangat Sulit','Sulit','Biasa','Mudah','Sangat Mudah',0.192),(4,'Fasilitas','sfasfasfasfas fasilitas',5,'1','2','3','4','5',0.192),(5,'Harga','asfasfasfs harga',3,'1','2','3','4','5',0.115),(6,'Kebersihan','asfasfasgas kebersihan',5,'1','2','3','4','5',0.192);
 
 /*Table structure for table `vote` */
 
 DROP TABLE IF EXISTS `vote`;
 
 CREATE TABLE `vote` (
-  `id_vote` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `id_vote` int(11) NOT NULL AUTO_INCREMENT,
   `id_kriteria` int(11) DEFAULT NULL,
   `nilai_vote` int(11) DEFAULT NULL,
   `id_alternatif` int(11) DEFAULT NULL,
+  `datetimes` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_vote`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=67 DEFAULT CHARSET=latin1;
 
 /*Data for the table `vote` */
 
